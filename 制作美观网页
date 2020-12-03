@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+                <style>
+                    .linear{
+                        width: 300px;
+                        height: 200px;
+                        border: 1px solid red;
+                        float: left;
+                }
+
+
+                .formlefttoright{
+                    background: linear-gradient(to right,yellow, green);
+                }
+                .formleftbottomtorighttop{
+                    background: linear-gradient(to right top yellow, green);
+                }
+                </style>
+
+
+
+        </heada>
+        <body>
+            <div class="linear formlefttoright " >
+
+            </div>
+
+            <div class="linear formleftbottomtorighttop">
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </body>
+    </html>
