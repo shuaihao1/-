@@ -1,46 +1,76 @@
-# -<!DOCTYPE html>
+
 <html>
     <head>
-        <style type="text/css">
-        div{
-            position: absolute;  /*绝对定位*/
-            width: 400px;
-            height: 200px;
-            padding: 200px;
-            color: #ffffff;
-            text-align: right;
-            font-size: 20px;
-        }
+        <script>  
+                /*
+                    1       1           等于          恒等于
+                    1       2          不等于        不恒等于
+                    '1'    '1'        等于          恒等于
+                    "1"    "1"        等于          恒等于
+                    '1'    "1"       等于          恒等于
+                    1      "1"         等于          不恒等于
+                    1      '1'         等于          不恒等于
 
-        .z1{
-            background-color: black;
-        }
-        .z2{
-            background-color: brown;
-            top: 60px;
-            left: 50px;
-        }
-        .z3{
-            background-color: blueviolet;
-            top: 60px;
-            left: 100px;
-        }
-        </style>
-    </head>
-    <body>
-        <div class="z1">
-            层：1
-        </div>
-            
-        <div  class="z2">
-            层：2
-        </div>
+                */
 
-        <div class="z3">
-            层：3
-        </div>
+
+
+
+
+
+
+
+        //1==   等于
+            console.log(1==1);       //ture
+            console.log(1==2);       //false
+            console.log(1=="1");       //true
 
         
+        //2==   恒等于
+            console.log(1 === 1);       //true
+            console.log(1 ==="1");      //false
+            console.log("1"==="1");     //false
+            console.log('1'==='1');     //true
+            console.log('1'==='1');     //true
+            console.log('1'==="1");       //true
+
+        //3 != 不等于
+        console.log(1 ! = 1 );        //false
+        console.log(1 ! = '1');    //false
+        console.log(1 != "1" );      //false
+        console.log('1'!= "1");   //false
+
+        //4 !  ==  不恒等于
+            console.log(1 !== 1);       //false 
+            console.log(1 !=="1");      //true
+            console.log(1 !=='1');     //true
+            console.log("1"!=="1");     //false
+            console.log('1'!=='1');     //false
+            console.log('1'!=="1");    //false
+        
+        
+        //5 >     >   =
+                console.log(1>1);       //false
+                console.log(1>=1);      //false
+
+
+        //6 <    <  =
+
+            console.log(1<1);       //false
+            console.log(1<=1);      //true
+        
+        //例外
+        console.log(0.1+0.2);   //0.3000000000004
+        console.log((0.1+0.2)==0.3);  //false
+
+
+
+        </script>
+    </head>
+
+
+    <body>
+
 
 
 
