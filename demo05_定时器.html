@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+
+    </head>
+    <body>
+        <button onclick="jianhongxian()">剪红线</button>
+
+
+    </body>
+    <script>
+          var timeer =  setTimeout(function(){          //定时器
+                console.log("爆炸了bomb......");
+            } , 300);
+
+
+            function jianhongxian (){
+                clearTimeout(timeer);       //清除定时器
+
+                clearInterval(fanfanfufu);   //清除中断
+            } 
+
+
+            var  fanfanfufu   =     setInterval(() => {                     //中断器
+                console.log("反复去世");
+            },1000);
+
+
+    </script>
+</html>
